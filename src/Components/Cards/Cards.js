@@ -26,7 +26,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           className={cx(styles.card, styles.infected)}
         >
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="textSecondary" variant="h5" gutterBottom>
               Infected
             </Typography>
 
@@ -63,7 +63,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           className={cx(styles.card, styles.recovered)}
         >
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="textSecondary" variant="h5" gutterBottom>
               Recoverd
             </Typography>
 
@@ -97,7 +97,12 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           className={cx(styles.card, styles.deaths)}
         >
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography
+              color="textSecondary"
+              variant="h5"
+              id="headings"
+              gutterBottom
+            >
               Deaths
             </Typography>
 
